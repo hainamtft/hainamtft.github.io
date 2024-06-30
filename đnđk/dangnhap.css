@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #bfcde6;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+    margin-right: 50px;
+}
+.form-container h1 {
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+.form-container input {
+    display: block;
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.form-container button {
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.form-container .footer {
+    margin-top: 200px;
+}
+.form-container .footer p {
+    margin: 0;
+}
+.form-container .footer a {
+    text-decoration: none;
+    color: black;
+}
+
