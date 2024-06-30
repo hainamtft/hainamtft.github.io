@@ -4,15 +4,24 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #bfcde6;
+    background-color: #a6c2f3;
+    background-image: url();
 }
 .container {
     display: flex;
     justify-content: center;
+
 }
 .form-container {
     margin-right: 50px;
-    border: 2px skyblue rgba(255, 255, 255,.5);
+    background-color: rgba(255, 255, 255, 0.5); /* Màu trắng với độ trong suốt 50% */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+
 }
 .form-container h1 {
     font-size: 30px;
@@ -42,5 +51,14 @@ body {
     text-decoration: none;
     color: black;
 }
-.container{
+.input{
+    background-color: rgba(255, 255, 255, 0.7); /* Màu trắng với độ trong suốt 50% */
+    border: 1px solid #ccc;
+}
+.input2{
+    background-color: rgba(255, 255, 255, 3); /* Màu trắng với độ trong suốt 50% */
+    border: 1px solid #ccc;
+}
+.img{
+
 }
