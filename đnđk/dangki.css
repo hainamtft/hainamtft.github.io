@@ -5,7 +5,10 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #a6c2f3;
-    background-image: url();
+    background-image: url(../img/download\ \(4\)\ \(1\)\ \(1\).jpg);
+    height: auto;
+    width: auto;
+    
 }
 .container {
     display: flex;
@@ -20,7 +23,7 @@ body {
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
-   
+   margin-top: 120px;
 
 }
 .form-container h1 {
@@ -52,13 +55,27 @@ body {
     color: black;
 }
 .input{
-    background-color: rgba(255, 255, 255, 0.7); /* Màu trắng với độ trong suốt 50% */
+    background-color: rgba(255, 255, 255, 0.7); 
     border: 1px solid #ccc;
 }
 .input2{
-    background-color: rgba(255, 255, 255, 3); /* Màu trắng với độ trong suốt 50% */
+    background-color: rgba(255, 255, 255, 3); 
     border: 1px solid #ccc;
 }
 .img{
 
+}
+.nav :hover{
+    background-color: rgb(240, 240, 248);
+    text-decoration: none;
+}
+.nav1{
+    color: black;
+    text-decoration: none;
+    font-size: 40px
+}
+.container nav1{
+    display: flex;
+    align-items: end;
+    
 }

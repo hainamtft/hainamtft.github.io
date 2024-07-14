@@ -1,0 +1,28 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.nav{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(8, 6, 6);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    
+}
+.nav:hover{
+    background-color: rgb(206, 140, 25);
+}
+.navteam{
+    background-color: rgb(206, 140, 25);
+}
+
+.backgr{
+    background-image: url();
+}
+.team{
+    margin-left: 1003px;
+    
+}
