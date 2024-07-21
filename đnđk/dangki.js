@@ -28,6 +28,7 @@ function getvalue() {
         return;
     }
 
+
     // var dangky = {
     //     name: name,
     //     gmail: gmail,

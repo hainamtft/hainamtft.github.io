@@ -6,22 +6,77 @@ body{
     text-decoration: none;
     margin-left: 20px;
     font-size: 30px;
-    color: rgb(251, 248, 248);
-    
+    color: rgb(8, 6, 6);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
     
     
 }
 .nav:hover{
-    background-color: rgb(21, 20, 20);
+    background-color: rgb(206, 140, 25);
 }
 .navteam{
-    background-color: rgb(180, 58, 58);
+    background-color: rgb(206, 140, 25);
 }
 
 .backgr{
-    background-image: url();
+
 }
 .team{
     margin-left: 1003px;
-    
 }
+ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
+  
+  @media (min-width: 500px) {
+    ul {
+      grid-auto-flow: column;
+    }
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+  
+  .divinf {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(206, 140, 25);
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+  }
+  
+  @keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
+  

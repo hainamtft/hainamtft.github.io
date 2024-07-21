@@ -7,8 +7,8 @@ body {
     background-color: #a6c2f3;
     background-image: url(../img/download\ \(4\)\ \(1\)\ \(1\).jpg);
     height: auto;
-    width: auto;
-    
+    width: 1700px
+
 }
 .container {
     display: flex;
@@ -21,10 +21,12 @@ body {
     border: 1px solid #ccc;
     border-radius: 15px;
     padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
    margin-top: 120px;
-
+   padding-top: 100px;
+   padding-bottom: 100px;
+    
 }
 .form-container h1 {
     font-size: 30px;
@@ -57,10 +59,12 @@ body {
 .input{
     background-color: rgba(255, 255, 255, 0.7); 
     border: 1px solid #ccc;
+    
 }
 .input2{
     background-color: rgba(255, 255, 255, 3); 
     border: 1px solid #ccc;
+    margin-left: 70px;
 }
 .img{
 
