@@ -28,15 +28,32 @@ function getvalue() {
         return;
     }
 
-
-    // var dangky = {
-    //     name: name,
-    //     gmail: gmail,
-    //     sdt: sdt,
-    //     pass: pass
-    // };
-    // var json = JSON.stringify(dangky);
-    // localStorage.setItem(name, json);
-    alert("Tạo tài khoản thành công");
+    // Swal.fire({
+    //     title: "The Internet?",
+    //     text: "That thing is still around?",
+    //     icon: "success"
+        
+    //   });
+   
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      
+      async function showAlert() {
+        await Swal.fire({
+          title: "The Internet?",
+          text: "That thing is still around?",
+          icon: "success"
+        });
+      
+     
+        await sleep(2000);
+      
+       
+        console.log("The alert was shown and 2 seconds have passed");
+      }
+      
+     
+      showAlert();
     location.href = "./dangnhap.html";
 }

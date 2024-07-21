@@ -64,32 +64,8 @@
 // });
 // alert("Login Sucessfull  !");
 // })
-import { initializeApp } from "firebase/app";
-    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
- 
-    const firebaseConfig = {
-        apiKey: "AIzaSyCbfz2kxDagBlIYHuhxTYOWIgxrJBKs-1g",
-          authDomain: "spck-1f294.firebaseapp.com",
-          databaseURL: "https://spck-1f294-default-rtdb.asia-southeast1.firebasedatabase.app",
-          projectId: "spck-1f294",
-          storageBucket: "spck-1f294.appspot.com",
-          messagingSenderId: "540781840441",
-          appId: "1:540781840441:web:0b835f91fed69d047165e8",
-          measurementId: "G-ZNJTF8HM07"
-    };
-    const app = initializeApp(firebaseConfig);
-    const db = getDatabase(app);
 
-    document.getElementById("button").addEventListener('click', function(e){
-      e.preventDefault();
-      set(ref(db, 'users/' + document.getElementById("username").value),
-      { 
-        username: document.getElementById("username").value,
-        email: document.getElementById("email").value,
-        phoneNumber: document.getElementById("sdt").value,
-        password: document.getElementById("pass").value // Add password field
-      });
-      alert("Registration Successful!");
       </script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
