@@ -1,41 +1,217 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
     <link rel="stylesheet" href="trang1.css">
+    <link rel="stylesheet" href="trang1.css">
+    <title>Food Blog template</title>
 </head>
 <body>
+    
+<main>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Dịch Vụ</a></li>
-                <li><a href="#">Liên Hệ</a></li>
-                <li class="right"><a href="#" style="margin-left: 1200px;">Đăng nhập</a></li>
-                <li class="right"><a href="../đnđk/dangki.html" style="">Đăng ký</a></li>
-            </ul>
+        <div class="menu">
+            <img class="show_hide" onclick="menu_show()" src="../Food-Blog-website/Icons/3 bar black.png" alt="">
+        </div>
+
+        <a href="./trang1.html"><h1 id="food">MENU</h1></a>
+
+        <a href="https://mail.google.com/mail/u/1/#inbox"><h1>MAIL</h1></a>
+
+        <nav id="nav">
+           <ul>
+               <li class="show_hide" onclick="menu_exit()" >Close Menu</li>
+               <li><a href="../spck/trangAPI.html">Food</a></li>
+               <li><a href="#about1">About</a></li>
+           </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
 
-Ẩm thực Việt Nam là một trong những nét đặc trưng văn hóa quan trọng, phản ánh sự phong phú và đa dạng của các vùng miền trên khắp đất nước.
-            <h1>Ẩm thực Việt Nam không chỉ nổi tiếng với hương vị độc đáo và đa dạng mà còn mang trong mình nét văn hóa và lịch sử phong phú của đất nước. Những món ăn này đã góp phần quảng bá hình ảnh Việt Nam ra toàn thế giới và được nhiều người yêu thích.</h1>
-            <p>Đây là đoạn văn giới thiệu về trang web của bạn. Bạn có thể đặt thông tin quan trọng ở đây.</p>
-        </section>
-        <section class="content">
-            <h2>Nội Dung Chính</h2>
-            <p>Đây là phần nội dung chính của trang web. Bạn có thể thêm bất kỳ thông tin nào bạn muốn chia sẻ với khách truy cập.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Trang Web của Bạn. Mọi quyền được bảo lưu.</p>
+    <section class="gallery">
+        <div class="img_gallery">
+            <div class="card">
+                <div class="image">
+                    <img src="../Food-Blog-website/img/steak.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>Thịt sườn</h3>
+                    <p>Thịt sườn là một nguyên liệu phổ biến và được sử dụng trong nhiều món ăn ngon miệng. </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../Food-Blog-website/img/croissant.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>bánh sừng bò</h3>
+                    <p>Bánh sừng bò, hay còn gọi là croissant, là một loại bánh ngọt phổ biến xuất xứ từ Pháp.</p>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../Food-Blog-website/img/sandwich.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>sandwich</h3>
+                    <p>Sandwich là một món ăn phổ biến, tiện lợi và dễ làm, được ưa chuộng trên khắp thế giới.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../Food-Blog-website/img/salmon.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>cá hồi</h3>
+                    <p>Cá hồi là một loại cá rất được ưa chuộng bởi giá trị dinh dưỡng cao và hương vị thơm ngon.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../Food-Blog-website/img/popsicle.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>Kem Que</h3>
+                    <p>Popsicle, còn được gọi là kem que, là một món tráng miệng đông lạnh phổ biến, đặc biệt vào mùa hè.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../Food-Blog-website/img/cherries.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>Anh đào</h3>
+                    <p>quả anh đào là một loại trái cây có vị ngọt hoặc chua, thường được thưởng thức tươi hoặc dùng trong các món tráng miệng và đồ uống. </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../Food-Blog-website/img/wine.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>Rượu Vang</h3>
+                    <p>Rượu vang là một loại đồ uống có cồn được làm từ quá trình lên men nho. Đây là loại đồ uống rất phổ biến và có lịch sử lâu đời, với nhiều loại và phong cách khác nhau tùy thuộc vào loại nho và quy trình sản xuất.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../img/05135ea1a8ca960defa6cc673aab5e14.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>BÍT TỂT</h3>
+                    <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="pagination">
+            <ul>
+                <li></li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>>></li>
+            </ul>
+        </div> -->
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="title"></h1>
+        <div class="about_banner">
+            <img src="../Food-Blog-website/img/chef.jpg" alt="">
+        </div>
+
+        <h1 class="caption">I am who I Am!</h1>
+        <em>With passion For Real, Good Food</em>
+        <p>
+            Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris 
+            neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, 
+            porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, 
+            porta lectus vitae, ultricies congue gravida diam non fringilla.
+        </p>
+    </section>
+
+
+    <footer id="about1" class="about1">
+        <div class="footer">
+            <h1>ABOUT</h1>
+            <p>
+               SDT:0384697055
+            </p>
+
+
+        </div>
+
+        <div class="blog_post">
+            <h1>BLOG POSTS</h1>
+            <div class="each_blog">
+                <img src="../Food-Blog-website/img/workshop.jpg" alt="">
+                <div class="caption">
+                    <h3>Lorem</h3>
+                    <p>Sed mattis nunc</p>
+                </div>
+            </div>
+
+            <div class="each_blog">
+                <img src="../Food-Blog-website/img/gondol.jpg" alt="">
+                <div class="caption">
+                    <h3>Lorem</h3>
+                    <p>Praes tinci sed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="posts">
+            <h1>Liên Lạc Trang Cá Nhân </h1>
+            <div class="each_post "><a href="">Facebook</a></div>
+            <div class="each_post "><a href="https://github.com/hainamtft">github</a></div>
+            <div class="each_post"><a href="https://www.instagram.com/t.hnam1/">instagram</a></div>
+            <div class="each_post"><a href="">telegram</a></div>
+            <!-- <div class="each_post">sdt:0384697055</div> -->
+            <!-- <div class="each_post">Drinks</div>
+            <div class="each_post">Ideas</div>
+            <div class="each_post">Flavors</div>
+            <div class="each_post">Cuisine</div>
+            <div class="each_post">Chicken</div>
+            <div class="each_post">Dressing</div>
+            <div class="each_post">Fried</div>
+            <div class="each_post">Fish</div>
+            <div class="each_post">Duck</div> -->
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</main>
+
+<script>
+    var nav = document.getElementById("nav");
+
+    function menu_show(){
+        nav.style.display="block";
+    }
+
+    function menu_exit(){
+        nav.style.display="none";
+    }
+
+
+
+
+
+</script>
+
+
+
+
+
 </body>
 </html>

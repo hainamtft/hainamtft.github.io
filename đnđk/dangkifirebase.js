@@ -1,64 +1,40 @@
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-// import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+// import { Firebase } from "./firebase.js";
+// const firebase = new Firebase();
 
-// var firebaseConfig = {
-//     apiKey: "AIzaSyCRWIVlXQnEwuBR67ggUulOZCMPYThZ3nY",
-//     authDomain: "hnam-1a67b.firebaseapp.com",
-//     databaseURL: "https://hnam-1a67b-default-rtdb.firebaseio.com",
-//     projectId: "hnam-1a67b",
-//     storageBucket: "hnam-1a67b.appspot.com",
-//     messagingSenderId: "1023573683053",
-//     appId: "1:1023573683053:web:229a2a9495b4fb25064864",
-//     measurementId: "G-5DGX9B37FM"
-// };
+// async function handleSubmitLogin(e) {
+//   e.preventDefault(); 
 
-// var app = initializeApp(firebaseConfig);
-// var db = getDatabase(app);
+//   const email = document.getElementById("email").value;
+//   const pass = document.getElementById("pass").value;
 
-// document.getElementById("button").addEventListener('click', function(e) {
-//     e.preventDefault();
-//     var username = document.getElementById("username").value;
-//     var gmail = document.getElementById("gmail").value;
-//     var phonenumber = document.getElementById("sdt").value;
+//   try {
+//     await firebase.login(email, pass);
+//   } catch (error) {
+//     alert("Lỗi: " + error.message); 
+//   }
+// }
 
-//     set(ref(db, 'user/' + username), {
-//         username: username,
-//         gmail: gmail,
-//         phonenumber: phonenumber
-//     })
-//     .then(() => {
-//         alert("Đăng ký thành công!");
-//     })
-//     .catch((error) => {
-//         alert("Lỗi: " + error.message);
-//     });
-// });
-import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+// document.getElementById("form").addEventListener("submit", handleSubmitLogin);
 
-var firebaseConfig = {
-        apiKey: "AIzaSyCRWIVlXQnEwuBR67ggUulOZCMPYThZ3nY",
-        authDomain: "hnam-1a67b.firebaseapp.com",
-        databaseURL: "https://hnam-1a67b-default-rtdb.firebaseio.com",
-        projectId: "hnam-1a67b",
-        storageBucket: "hnam-1a67b.appspot.com",
-        messagingSenderId: "1023573683053",
-        appId: "1:1023573683053:web:229a2a9495b4fb25064864",
-        measurementId: "G-5DGX9B37FM"
-    };
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+import { Firebase } from "./firebase.js";
 
-document.getElementById("submit").addEventListener('click', function(e){
-e.preventDefault();
-set(ref(db, 'user/' + document.getElementById("username").value),
-{
-   
-username: document.getElementById("username").value,
-email: document.getElementById("email").value,
-PhoneNumber: document.getElementById("phone").value
+const firebase = new Firebase();
 
+document.addEventListener("DOMContentLoaded", () => {
+
+  async function handleSubmitLogin(e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("pass").value;
+
+    try {
+      await firebase.login(email, pass);
+      alert("Đăng nhập thành công!");
+    } catch (error) {
+      alert("Lỗi: " + error.message);
+    }
+  }
+
+  document.getElementById("form").addEventListener("submit", handleSubmitLogin);
 });
-alert("Login Sucessfull  !");
-})
-
