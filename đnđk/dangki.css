@@ -6,32 +6,28 @@ body {
     margin: 0;
     background-color: #a6c2f3;
     background-image: url(../img/download\ \(4\)\ \(1\)\ \(1\).jpg);
-    height: auto;
-    width: 1700px
-
+    width: 1700px;
 }
+
 .container {
     display: flex;
     justify-content: center;
-
 }
+
 .form-container {
     margin-right: 50px;
     background-color: rgba(255, 255, 255, 0.5); /* Màu trắng với độ trong suốt 50% */
     border: 1px solid #ccc;
     border-radius: 15px;
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-   margin-top: 120px;
-   padding-top: 100px;
-   padding-bottom: 100px;
-    
+    padding: 100px;
+    margin-top: 120px;
 }
+
 .form-container h1 {
     font-size: 30px;
     margin: 0 0 20px;
 }
+
 .form-container input {
     display: block;
     height: 30px;
@@ -39,6 +35,7 @@ body {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 .form-container button {
     border-radius: 10px;
     width: 200px;
@@ -46,40 +43,43 @@ body {
     cursor: pointer;
     margin-top: 10px;
 }
+
 .form-container .footer {
     margin-top: 200px;
 }
+
 .form-container .footer p {
     margin: 0;
 }
+
 .form-container .footer a {
     text-decoration: none;
     color: black;
 }
-.input{
+
+.input {
     background-color: rgba(255, 255, 255, 0.7); 
     border: 1px solid #ccc;
-    
 }
-.input2{
-    background-color: rgba(255, 255, 255, 3); 
+
+.input2 {
+    background-color: rgba(255, 255, 255, 0.3); 
     border: 1px solid #ccc;
     margin-left: 70px;
 }
-.img{
 
-}
-.nav :hover{
+.nav:hover {
     background-color: rgb(240, 240, 248);
     text-decoration: none;
 }
-.nav1{
+
+.nav1 {
     color: black;
     text-decoration: none;
-    font-size: 40px
+    font-size: 40px;
 }
-.container nav1{
+
+.container .nav1 {
     display: flex;
     align-items: end;
-    
 }

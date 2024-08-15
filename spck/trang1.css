@@ -1,5 +1,5 @@
 *{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -292,9 +292,26 @@ footer .posts .active{
       margin-bottom: 50px;
   }
 }
-
-@media only screen and (max-width:399px) {
-  main{
-      width: 95%;
+.covering-div{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.imgcon{
+  .image{
+    width: 200px; 
+    height: 200px;
+    border-radius: 20rem;
   }
+}
+.card{
+  width: 200px;
+  padding: 10px 15px;
+  &:hover {
+    cursor: pointer;
+  }  
+}
+.product-name{
+  text-align: center;
 }

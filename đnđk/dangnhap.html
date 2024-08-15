@@ -12,13 +12,13 @@
             <a href="../spck/trang1.html" class="nav1"><img src="../img/linux.png" alt="" style=""></a>
             </div>
                
-            <form id="from1">
+            <form id="form">
                 <div class="form-container">
                     <h1>sign in</h1>
-                    <input type="email" placeholder="Gmail" id="gmail" class="input"  />
-                    <input type="number"  placeholder="PhoneNumber" id="sdt" class="input"/>
-                    <input type="password" placeholder="Pass" id="pass" class="input" />
-                    <input type="password" placeholder="ConfirmPassword" id="repass" class="input"/>
+                    <input type="email" placeholder="Gmail" id="emailSignin" class="input"  />
+                    <!-- <input type="number"  placeholder="PhoneNumber" id="sdt" class="input"/> -->
+                    <input type="password" placeholder="Pass" id="passwordSignin" class="input" />
+                    <!-- <input type="password" placeholder="ConfirmPassword" id="repass" class="input"/> -->
                     <button id="button" class="input2">sign in</button>
                     <p></p>
                     <a style="text-decoration: none; color: black;font-size: 20px;" href="./dangki.html">Đăng kí tài khoản?</a>
@@ -30,6 +30,10 @@
                 </div>
             </div>
             </form>
-        
+        </div>
+    </div>
+        <script src="./dangnhap.js" type="module"></script>
+        <script src="./firebase.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
