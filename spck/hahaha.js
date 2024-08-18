@@ -2,7 +2,7 @@ const url = 'https://the-vegan-recipes-db.p.rapidapi.com/';
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '34a49d1be5mshd8263e5ce77ea99p1af87ejsn09f7892f4ffa',
+		'x-rapidapi-key': '59ea6a441dmshdeeefa50415882ap19865cjsn1dab961e277e',
 		'x-rapidapi-host': 'the-vegan-recipes-db.p.rapidapi.com'
 	}
 };
